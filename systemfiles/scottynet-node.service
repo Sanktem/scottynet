@@ -9,4 +9,4 @@ ExecStart=/usr/bin/node server.js
 Restart=on-failure
 
 [Install]
-WantedBy=multi-user.target]
+WantedBy=multi-user.target
