@@ -61,11 +61,9 @@
                 countSpan.textContent = data.count;
             });
 
-        // Check if user has already downloaded
-        const hasDownloaded = localStorage.getItem('hasDownloaded');
-
         btn.addEventListener('click', () => {
-            if (hasDownloaded) {
+            // Check localStorage at click time
+            if (localStorage.getItem('hasDownloaded')) {
                 // Do not increment if already downloaded
                 return;
             }
